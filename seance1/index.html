@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HNU6058 - HNU3058</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/reveal.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/theme/moon.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/css/zenburn.min.css'>
+<!-- <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/90377/slidedeck_styles_base.css'> -->
+<link rel='stylesheet' href="styles.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="reveal">
+  <div class="slides">
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" >
+        <h1 style="color: black; font-weight: bold">HNU6058 - HNU3058</h1>
+        <p style="color: black">Technologies du web</p>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2 >Tour de table</h2>
+      <!--changements d'oraires-->
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+         <h2>Objectifs du cours</h2>
+         <h3>10 février</h3>
+         <ul>
+          <li>Le Web, de ses origines à aujourd’hui.</li>
+          <li>Comprendre les principes généraux de HTML et ses balises</li>
+          <li>Comprendre (pas en détail) l'utilité de CSS pour structurer une page web</li>
+         </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>Objectifs du cours</h2>
+         <h3>17 février</h3>
+         <ul>
+          <li>Intégrer fichiers CSS et HTML pour structurer des pages Web</li>
+          <li>Enrichir la page web avec de simples interactions JavaScript</li>
+          <li>Avoir une compréhension générale de la structure du Web et des principes qui différencient HTML, CSS, JavaScript</li>
+         </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>Objectifs du cours</h2>
+         <h3>24 février</h3>
+         <ul>
+          <li>Créer une application simple intégrant les trois technologies étudiées (projet ensemble en classe)</li>
+          <li>Être conscient des pratiques actuelles de développement de sites Web : frameworks JavaScript, générateurs de sites statiques, CMS</li>
+         </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+     <h2>Méthode d'évaluation</h2>
+     <ul>
+      <li>10% : Participation en classe</li>
+      <li>10% : Exercice entre la semaine du 17 février et du 24 février : création d'une page de présentation personnelle en utilisant CSS et HTML</li>
+      <li>80% : Création d'une page de présentation personnelle en CSS, HTML avec interactions JavaScript + un court texte (max. 500 mots) présentant votre projet, les technologies utilisées et les choix effectués lors de la création du site</li>
+     </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h3>Trois composantes fondamentales différencient le Web de l'Internet</h3>
+      <ol>
+        <li>Un langage de balisage pour le formatage de documents hypertextuels --> <i>HTML</i></li>
+        <li>Un système de notation uniforme pour adresser les ressources accessibles sur le réseau --> <i>Uniform Resource Identifier (URI)</i>. Pour des raisons historiques, on l'appelle le plus souvent <i>Uniform Resource Locator (URL)</i></li>
+        <li>Un protocole uniforme pour échanger des données entre les clients et les serveurs du Web</li>
+      </ol>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>L'architecture du Web</h2>
+      <h3>Modèle TC/IP</h3>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h3>1: Network Access Layer</h3>
+      <p>L'infrastructure physique qui permet aux ordinateurs de communiquer entre eux sur Internet.</p>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h3>2 : Internet Layer</h3>
+      <ul>
+        <li>Contrôle le flux et l'acheminement du trafic afin de garantir la rapidité et la précision de l'envoi des données</li>
+        <li>Rassemble paquet de données à sa destination.</li>
+        <li>IP (Internet Protocol) et ICMP (Internet Control Message Protocol)</li>
+      </ul>
+    </section>
+
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>3: Transport Layer</h2>
+      <ul>
+        <li>Fournit des solutions pour des communications (connexions) fiables.</li>
+        <li>TCP Transmission Control Protocol</li>
+        <li>UDP (Datagram Protocol) pour les services - tels que les services de diffusion vidéo et audio - qui ne nécessitent pas la fiabilité (et la surcharge) associée au protocole TCP</li>
+      </ul>
+    </section>
+   <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+    <h2>4 : Application Layer</h2>  
+    <ul>
+        <li>Permet à l'utilisateur d'accéder au réseau</li>
+        <li>Ex : courriels, applications de messagerie. services cloud</li>
+        <li>SMTP, FTP, SSH, HTTP, operate</li> 
+    </ul>
+    </section>
+        <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+          <h2>Histoire du Web</h2>
+          <h3>Les origines d'Internet</h3> 
+          <ul>
+          <li>1965 : USA, Advanced Research Projects Agency (ARPA), pour résoudre les problèmes de gestion : l'ARPA possédait plusieurs ordinateurs qui avaient beaucoup de difficultés à communiquer entre eux</li>
+          <li>1966 : ARPANET, sous la responsabilité de Jospeh Licklider (MIT)</li>
+          <li>Packet switching : les paquets de données empruntent différents itinéraires vers leur destination</li>
+          <li>1969 : Les deux premiers nœuds Internet entre l'UCLA et l'Université de Standford. Application Telnet </li>
+          </ul> 
+          </section>
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+            <h2>Histoire du Web</h2>
+            <h3>Les origines d'Internet</h3> 
+            <ul>
+            <li>1973 : Robert Kahn (ARPA) et Vinton Cerf (Université de Stanford), ont formalisé par écrit la structure de Internet</li>
+            <li>1973 : Le projet de protocole de contrôle de transmission (TCP) a été créé.</li>
+            <li>1978 : IP, toujours au sein du projet ARPANET</li>
+            <li>1986 : La "National Science Foundation" américaine a créé le réseau NSFNET pour connecter les universités américaines à leurs superordinateurs et les relier à ARPANET</li>
+            </ul> 
+            </section>
+            <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+              <h2>Histoire du Web</h2>
+              <h3>Les origines d'Internet</h3> 
+              <ul>
+              <li>1990 : ARPANET, devenue obsolète, a été mis hors service. La NSF a été désignée pour administrer l'ensemble du réseau universitaire aux États-Unis</li>
+              <li>1990 : HTTP créé à Genève par Tim Berners Lee, Robert Caillau et leur equipe</li>
+              </ul> 
+              </section>
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Histoire du Web</h2>
+                <h3>Les origines d'Internet</h3> 
+                <ul>
+                <li>1990 : <a href="https://web.archive.org/web/20150717103715/http://info.cern.ch/hypertext/WWW/TheProject.html"><a>premier site web</a></li>
+                <li>Pour penser au Web, Tim Berners Lee a été inspiré par d'autres projets tels que <a href="https://xanadu.com/xUniverse-D6">Xanadu</a> et Hypercard.</li>
+                </ul> 
+              </section>
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Le Web</h2> 
+                <ul>
+                <li>Tim Berners Lee contre l'idée de repenser un ensemble intertextuel</li>
+                <li>Un protocole très simple : HTTP pour récupérer le texte d'autres documents via des liens hypertextes.</li>
+                <li>Le format de texte pour HTTP a été nommé HTML, pour HyperText Mark-up Language.</li>
+                </ul> 
+                </section> 
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Le Web</h2> 
+                <ul>
+                <li>Syntaxe de base de HTML (paragraphes, titres, listes) fortement influencée par le SGML</li>
+                <li>Un protocole très simple : HTTP pour récupérer le texte d'autres documents via des liens hypertextes.</li>
+                <li>Clairement SGML ne comprend pas les liens</li>
+                </ul> 
+                </section>  
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Le Web</h2> 
+                <ul>
+                <li>1993 : National Centre for Supercomputing Applications crée le naivageur <i>Mosaic</i> (première alternative au CERN)</li>
+                <li>1994 :<i>Internet Engineering Task Force</i> (communauté de chercheurs, network designers, opérateurs qui constitue le corps international pour la standardisation d'Internet crée HTML 2</li>
+                <li>World Wide Web consortium</li>
+                </ul> 
+              </section>
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Le Web</h2> 
+                <ul>
+                <li>1995 : Nouveau attributes, mais certaines ont été l'objet de polémiques par la communauté d’ingénieur (notamment BGCOLOR, FONT FACE). 
+                <p><code>You're not supposed to be able to do things like that in HTML</code></p>.</li>
+                <li>1996 : le brouillon de travail du Consortium W3 sur les scripts est publié. Ce brouillon deviendra partie du standard HTML</li>
+                <li>1997 : HTML3.2 est publié --> tableaux, applets, flux de texte autour des images, souscripts et superscripts</li>
+                <li>1998 : HTML 4.0</li>
+                </ul> 
+              </section> 
+            <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+              <h2>Le Web</h2> 
+              <ul>
+                <li>1995 : Bert Bos, Håkon Lie, Dave Raggett, Chris Lilley et d'autres membres du World Wide Web Consortium se réunissent à Versailles pour discuter du déploiement des feuilles de style en cascade --> action inspirée par Word</li>
+                <li> Cascading Style Sheets : plusieurs feuilles de style peuvent interagir pour produire l'aspect final du document.</li>
+                <li>2008 : HTML5 recommandé par le WW3 Consortium - qui comprends maintenant Apple, Google, Mozilla, Microsoft</li>
+                <li>1998 : HTML 4.0</li>
+              </ul> 
+            </section> 
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+            <h2>HTML 5</h2> 
+              <ul>
+              <li>Backward-compatible</li>
+              <li>APIs pour des applications web plus complexes</li>
+              <li>Multimedia (<code>video, audio</code>) et elements graphiques (<code></code>canvas</code>)</li>
+              <li>Sections extensibles comme <code></code>summary</code> and <code>details</code>, qui avant dépendaient de CSS ou JavaScript</li>
+            </ul> 
+          </section> 
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+            <h2>HTML 5</h2> 
+              <ul>
+              <li>Contenu sémantique enrichi (<code>main, section, article, header, footer, aside, nav</code>)</li>
+            </ul> 
+          </section> 
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+          <h2>HTML 5</h2> 
+          <h3>HTML - body</h3>
+              <img src="html_categories.png">
+          </section> 
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+            <h2>La structure d'un document HTML</h2>
+            <img class="html_structure" src="html_structure.png">
+          </section>               
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/js/reveal.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/js/head.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

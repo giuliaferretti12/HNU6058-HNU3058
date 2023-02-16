@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Light.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Light.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: 300;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-LightItalic.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-LightItalic.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-LightItalic.ttf') format('truetype');
+  }
+  
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Regular.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Regular.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: 400;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-RegularItalic.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-RegularItalic.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-RegularItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Semibold.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Semibold.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Semibold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: 600;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-SemiboldItalic.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-SemiboldItalic.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-SemiboldItalic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Bold.eot') format('eot'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Bold.woff') format('woff'), 
+      url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Bold.ttf') format('truetype');
+  }
+  
+  html, body, p {
+      font-family: 'Proxima Nova', Helvetica, Arial, sans-serifawes !important;
+      color:black
+  }
+  
+  body {
+    background-image: url("https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
+    text-align: left;
+    padding-left: 5%;
+  }
+  
+  .html_structure {
+    width: 40%;
+    height: 100%;
+  }
+  
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6,
+  .reveal ul,
+  .reveal ol {
+    color: black;
+    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
+    text-transform: none;
+  }
+  
+  
+  .reveal {
+      font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
+  }
+  
+  .reveal .controls .navigate-right,
+  .reveal .controls .navigate-right.enabled {
+    border-left-color: #2857ae;
+  }
+  
+  .reveal .controls .navigate-left,
+  .reveal .controls .navigate-left.enabled {
+    border-right-color: #2857ae;
+  }
+  
+  .reveal .controls .navigate-up,
+  .reveal .controls .navigate-up.enabled {
+    border-bottom-color: #2857ae;
+  }
+  
+  .reveal .controls .navigate-down,
+  .reveal .controls .navigate-down.enabled {
+    border-top-color: #2857ae;
+  }
+  

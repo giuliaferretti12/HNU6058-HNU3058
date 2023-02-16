@@ -74,6 +74,8 @@
         line-height: 700%;
         color: black;
         font-size: 150%;
+        font-weight: bold;
+
       }
 
       h1 {
@@ -90,41 +92,4 @@
     height: 100%;
   }
   
-  .reveal h1,
-  .reveal h2,
-  .reveal h3,
-  .reveal h4,
-  .reveal h5,
-  .reveal h6,
-  .reveal ul,
-  .reveal ol {
-    color: black;
-    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
-    text-transform: none;
-  }
-  
-  
-  .reveal {
-      font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
-  }
-  
-  .reveal .controls .navigate-right,
-  .reveal .controls .navigate-right.enabled {
-    border-left-color: #2857ae;
-  }
-  
-  .reveal .controls .navigate-left,
-  .reveal .controls .navigate-left.enabled {
-    border-right-color: #2857ae;
-  }
-  
-  .reveal .controls .navigate-up,
-  .reveal .controls .navigate-up.enabled {
-    border-bottom-color: #2857ae;
-  }
-  
-  .reveal .controls .navigate-down,
-  .reveal .controls .navigate-down.enabled {
-    border-top-color: #2857ae;
-  }
   

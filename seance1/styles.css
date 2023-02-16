@@ -83,6 +83,7 @@ body {
 .reveal h5,
 .reveal h6,
 .reveal ul,
+.revel p,
 .reveal ol {
   color: black;
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;

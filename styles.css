@@ -62,16 +62,28 @@
       url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Bold.ttf') format('truetype');
   }
   
-  html, body, p {
+      body {
       font-family: 'Proxima Nova', Helvetica, Arial, sans-serifawes !important;
-      color:black
+      color:black;
+      background-image: url("https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
+      text-align: left;
+      padding-left: 5%;
   }
-  
-  body {
-    background-image: url("https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
-    text-align: left;
-    padding-left: 5%;
-  }
+
+      p {
+        line-height: 700%;
+        color: black;
+        font-size: 150%;
+      }
+
+      h1 {
+        font-size: 500%
+      }
+
+      h2 {
+        font-size: 250%;
+      }
+
   
   .html_structure {
     width: 40%;

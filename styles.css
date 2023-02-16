@@ -62,94 +62,35 @@
     url('https://www.sparkpay.com/Shared/Themes/SparkPay2015-5-15 [Spork]/fonts/ProximaNova-Bold.ttf') format('truetype');
 }
 
-html, body, p {
+    body {
     font-family: 'Proxima Nova', Helvetica, Arial, sans-serifawes !important;
-    color:black
+    color:black;
+    text-align: left;
+    padding-left: 5%;
+    background-image: url("https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
+    background-image: url(https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 500%;
 }
 
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6,
-.reveal ul,
-.revel p,
-.reveal ol {
-  color: black;
-  font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
-  text-transform: none;
-}
+    p {
+      line-height: 500%;
+      color: black;
+      font-size: 150%;
+      font-weight: bold;
 
-.reveal h1 {
-  font-size: 2em;
-}
+    }
 
-.reveal h2 {
-  font-size: 1.85em;
-}
+    h1 {
+      font-size: 500%
+    }
 
-.reveal h3 {
-  font-size: 1.4em;
-}
-
-.reveal {
-    font-family: 'Proxima Nova', Helvetica, Arial, sans-serif !important;
-}
+    h2 {
+      font-size: 250%;
+    }
 
 
 
-
-body {
-  background: #212d3a;
-  background-image: url("https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg");
-  background-size: cover;
-  background-position: center center;
-}
-
-/* Set a default font size for the entire webpage */
-html {
-  font-size: 16px;
-}
-
-/* Use media queries to adjust styles for different screen sizes */
-@media only screen and (max-width: 600px) {
-  /* Adjust font sizes and margins for smaller screens */
-  html {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 10rem;
-    margin-top: 15rem;
-  }
-  p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-/* Use flexible units for layout and sizing */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-header {
-  flex: 1;
-}
-main {
-  flex: 2;
-}
-footer {
-  flex: 1;
-}
-
-/* Use scalable images to ensure they fit within their containers */
-img {
-  max-width: 100%;
-  height: auto;
-}
 

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HNU6058 - HNU3058</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/reveal.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/theme/moon.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/css/zenburn.min.css'>
+<!-- <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/90377/slidedeck_styles_base.css'> -->
+<link rel='stylesheet' href="styles.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="reveal">
+  <div class="slides">
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" >
+        <h1 style="color: black; font-weight: bold">HNU6058 - HNU3058</h1>
+        <h3 style="color: black">Technologies du web</h3>
+        <p>Séance 2 – 17 février </p>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2 >Plan de la séance</h2>
+      <ul>
+        <li>Rappel séance 1</li>
+        <li>Construire et personnaliser son CV en ligne</li>
+        <li>Structurer une page web avec CSS</li>
+      </ul>
+      <!--changements d'oraires-->
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+         <h2>Rappel</h2>
+         <h3>10 février</h3>
+         <ul>
+          <li>Images <img src="graduated.jpg" alt="image" class="graduated"></li>
+          <li>Links <a href="https://www.umontreal.ca/">UdeM</a></li>
+          <li>New tab <a href="https://www.umontreal.ca/" target="_blank">UdeM</a></li>
+          <li>Link à partir d'un bouton <form action="https://www.umontreal.ca/"><input type="submit" value="UdeM" /></form></li>
+          <li>Link à partir d'une image <a href="https://www.umontreal.ca/"><img src="graduated.jpg" alt="UdeM" class="graduated"></a></li>
+         </ul>
+    </section>
+
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <blockquote class="reveal">The only way to modify rendering of HTML elements in older browsers was through global settings of the browser. However, early HTML specifications attempted to put stakes in the ground toward rendering abstractions to be achieved in the future (e.g., the distinction between <code>B</code> and <code>STRONG</code>). </blockquote>
+   </section>
+
+   <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+    <h2>CSS</h2>
+    <ul>
+        <li>Les valeurs peuvent avoir différents niveaux d'abstraction</li>
+        <li>Propriétés des fonts</li>
+        <li>Propriétés des couleurs</li>
+        <li>Propriétés des groupes de texte(indentation des lettres, décoration du texte, alignement, minuscules, majuscules)</li>
+        <li>Propriétés des boîtes (box properties)</li>
+        <li>Propriétés de classification (<code>p {display : list-item}</code>)</li>
+    </ul>
+</section>
+
+<section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+    <h2>LINK</h2>
+    <ul>
+        <li><code>rel</code> : Le type de relation avec le fichier associé</li>
+        <li><code>type</code> : text/css</li>
+        <li><code>href</code> : Localise le fichier</li>
+    </ul>
+</section>
+
+<section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg"">
+    <h2>META</h2>
+    <ul>
+    <li>Pour déclarer un document non cachable ou souligner la date d'expiration d'un document ?</li>
+    <li>Oui pour les caches browser, non pas par les caches proxy, qui ne lit normalement pas pas le HTML du document</li>
+    <li>Ex : <code>meta http-equiv="Expires" content="Sun, 17 Feb 2023"</code></li>
+    <li>Un HTTP header est un champ d'une demande ou d'une réponse HTTP qui transmet un contexte et des métadonnées supplémentaires sur la demande ou la réponse (ex. format du document)</li>
+    </ul>
+</section>
+
+<section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+    <h2>CSS</h2>
+    <ul>
+        <li>Embedded style</li>
+        <!--<style type="text/css" media="screen" href="url"-->
+        <li>Inline style</li>
+        <!--<h1 style="boarder-width: 1>-->
+    </ul>
+</section>
+    
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Structurer une page Web</h2>
+        <h3>Nouveaux tags HTML</h3>
+        <ul>
+        <li><code>span</code> (dans le header) - Petit texte pour le rôle/titre, plus effacé </li>
+        <li><code>header</code> : En-tête</li>
+        <li><code>section</code></li>
+        <li><code>dl</code> - <code>dd</code> - <code>dt</code> : Liste de définitions</li>
+        <li><code>hr</code> : Une règle horizontale (élément auto-fermant)</li>
+        <li><code>footer</code></li>
+        <li><code>rel</code></li>
+        </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Ajoutons un peu de CSS</h2>
+        <h3>Body</h3>
+        <ul>
+        <li><code>margin: 1rem auto;</code> : Pour Limiter la largeur de tout le contenu sur la page et centrer horizontalement<ul>
+        <li>Concept : valeurs relatives <!--ex. REM : the default value of the browser font size, which is often 16px. AUTO : automatically adjusted--> vs. valeurs absolues de la longueur <!-- absolues : This is especially useful when you know the exact dimensions of the output, which is mostly with print layouts. But it's not so useful when this is not the case, like with all the different screen sizes out there.--></li>
+        </ul>
+        </li>
+        <li><code>max-width: 44rem;</code> : Pour centrer le contenu horizontalement</li>
+        <li><code>padding: 1rem;</code> : Pour éviter que le texte soit collé sur le bord de la fenêtre</li>
+        </ul>
+        
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2 id="header">Header</h2>
+        <ul>
+            <li><code>text-align: center;</code></li>
+            <li><code>border-top: 6px double currentColor;</code> : Bordure décorative <!--currentColor is useful when you want a certain color to be consistent in an element--></li>
+        </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>dl – dt – dd</h2>
+        <ul>
+        <li>description list – description term – description definition</li>
+        <li><code>display: grid</code> : Vs. table et vs. flexbox<!--FLEXBOX : was designed for layout in one dimension, either a row or a column--></li>
+        <li><code>repeat</code>: Function CSS pour attribuer une valeur à toutes les 12 colonnes du grid</li>
+        <li><code>1fr</code> : L&#39;espace disponible est divisé uniformément pour chaque colonne du grid</li>
+        <li><code>baseline;</code> : La ligne de laquelle découle la hauteur totale des éléments</li>
+        </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>grid</h2>
+        <ul>
+        <li><code>grid-template-rows: repeat(3, auto);</code></li>
+        <li><code>auto</code> : L&#39;élément occupe l&#39;espace suffisant pour exister</li>
+        <li><code>1fr</code> : L&#39;élément prend tout l&#39;espace disponible, à moins que quelque chose d&#39;autre n&#39;apparaisse</li>
+        row-gap: 0.25rem;</li>
+        <li><code>gap: .25rem .5rem;</code></li>
+        <li><code>column-gap: 0.5rem</code></li>
+        </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>Sélecteurs</h2>
+      <ul>
+        <li><code>.entree + .entree</code> : une classe qui suit une autre classe</li>
+        <li><code>.entree .nom</code> : un élément qui a une classe (nom) qui descend d&#39;une autre classe (entre)</li>
+        <li><code>.entree.nom</code> : un élément qui a la classe entree et la classe nom</li>
+        <li><code>article &gt; section</code> : section qui est child direct de l&#39;élément article</li>
+        <li><code>#entree</code></li>
+    </ul>
+    </section>
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+      <h2>padding vs. margin</h2>
+      <p><code>padding: 1.5rem 0;</code> : padding-top et padding-bottom 1.5, padding-left et padding-right 0</p>
+    </section>
+
+    <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Fonts formats</h2>
+        <h3>TTF TrueType Font (.ttf)</h3>
+        <ul>
+        <li>1989</li>
+        <li>Windows et Macintosh</li>
+        <li>Les données pour l&#39;impression et les données de l&#39;écran sont dans un seul fichier</li>
+        <li>Facilité d&#39;installation et d&#39;utilisation</li>
+        </ul>
+    </section>
+   <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+    <h2>Fonts formats</h2> 
+    <h3 id="otf-opentype-font-oft-">OTF OpenType Font (.oft)</h3>
+    <ul>
+        <li>1997</li>
+        <li>Prend en charge des fonctions de typographie plus avancées.</li>
+        <li>Par Microsoft et Adobe en tant qu&#39;extension du format de police TrueType d&#39;Apple</li>
+    </ul>
+    </section>
+        <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+          <h2>Fonts formats</h2>
+          <h3 id="woff-web-open-font-format-woff-">WOFF Web Open Font Format (.woff)</h3>
+            <ul>
+            <li>2009</li>
+            <li>Mozilla </li>
+            <li>Les données des polices sont compressées, ce qui permet aux sites utilisant WOFF d&#39;utiliser moins de bande</li>
+            <li>Chargement plus rapide des pages Web</li>
+            <li>Plus riche à niveau des métadonnées : par exemple, des informations sur la licence</li>
+            </ul>
+          </section>
+          <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+            <h2>Fonts formats</h2>
+            <h3 id="font-weight">Font-weight</h3>
+                <ul>
+                <li>300 : light</li>
+                <li>400 : normal</li>
+                <li>500 : medium</li>
+                <li>600 : semi-bold</li>
+                <li>700 : bold</li>
+                <li>900 : heavy</li>
+                <li>lighter/bolder : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">poids relatif, par rapport à la police &quot; parent &quot;</a></li>
+                </ul>
+            </section>
+            <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+              <h2>Fonts formats</h2> 
+              <h3>Importation des fonts dans un document CSS</h3>
+                <ul>
+                <li><code>@font-family</code></li>
+                <li><code>src: url(&#39;raleway-light.ttf&#39;) format(&#39;truetype&#39;);</code></li>
+                </ul>
+              </section>
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Box-shadow</h2>
+                <p><code>box-shadow: 0 0 10px rgba(0, 0, 0, .15);</code></p>
+              </section>
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Pseudo-éléments</h2>
+                <p><code>dt::after</code></p>
+                <ul>
+                <li>Les pseudo-éléments CSS  : pratiques pour ajouter de la décoration supplémentaire.</li>
+                <li><strong>Le contenu d’un pseudo-élément ne sera pas lu par des lecteurs d’écrans ou copié dans le presse-papier si vous sélectionnez le texte</strong>.</li>
+                <li>Dans ce cas, nous structurons la définition comme suit: <code>Term: Definition</code></li>
+                </ul>
+                </section> 
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Règles horizontales</h2>
+                <ul>
+                <li><code>hr</code> : Horizontal rule</li>
+                </ul>
+                </section>  
+              <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+                <h2>Variante</h2>
+                <ul>
+                <li><code><a href="https://fonts.google.com/">@import</a></code></li>
+                <li><code>grid-template-columns: [colonne-secondaire] 4fr [colonne-principale]  8fr;</code></li>
+                </ul>
+              </section>       
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/js/reveal.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/js/head.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

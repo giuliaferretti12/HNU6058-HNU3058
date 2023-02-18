@@ -1,0 +1,154 @@
+/*
+ * Réglages généraux
+ */
+ html {
+    /* Typographie générale du document */
+    /* 1. Police spéciale, chargée localement (voir le fichier raleway.css chargé dans le document HTML) */
+    /* 2. Police générique, sans empattement */
+    font-family: Raleway, sans-serif;
+    line-height: 125%;
+  
+    /* Fond gris */
+    background-color: whitesmoke;
+  }
+  
+  body {
+    /* Limiter la largeur de tout le contenu sur la page et centrer horizontalement */
+    margin: 1rem auto;
+    max-width: 44rem;
+  
+    /* Ajouter une marge constante pour éviter le texte collé sur les bords de la fenêtre */
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  
+    /* Fond blanc, pour ressortir du fond gris */
+    background-color: white;
+  }
+  
+  /*
+   * En-tête (contenant le nom et le titre)
+   */
+  header {
+    /* Nous pouvons faire une disposition centrée et espacée */
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  
+    /* Bordure décorative */
+    border-top: 6px double currentColor;
+    border-bottom: 2px solid currentColor;
+  }
+  
+  /* En-tête en capitales */
+  header h1 {
+    text-transform: uppercase;
+    letter-spacing: .035em;
+    margin: 1rem 0;
+    font-size: 2.25rem;
+    font-weight: lighter;
+  }
+  
+  /* Petit texte pour le rôle/titre, plus effacé */
+  header span {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /*
+   * Listes de définition
+   */
+  dl {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .5rem 1rem;
+    align-items: baseline;
+    font-size: 0.875rem;
+  }
+  dt {
+    font-weight: bold;
+    grid-column: 1 / span 3;
+  }
+  /* Les CSS pseudo-éléments: pratique pour ajouter de la décoration supplémentaire. */
+  dt::after {
+    /* Attention!
+     * Le contenu d’un pseudo-élément ne sera pas lu par des lecteurs d’écrans
+     * ou copié dans le presse-papier si vous sélectionnez le texte. */
+    content: ' :';
+  }
+  dd {
+    margin-left: 0;
+    grid-column: 4 / span 9;
+    color: #444;
+  }
+  
+  /*
+   * Règles horizontales
+   */
+  hr {
+    /* Un bon espacement vertical, aucun espacement horizontal */
+    margin: 2rem 0;
+    /* Remettre la bordure à zéro... */
+    border: 0;
+    /* ... et ajouter une simple bordure légère */
+    border-top: 1px solid #ccc;
+  }
+  
+  /*
+   * Typographie
+   */
+  h2 {
+    /* Annuler les marges, ajouter de l’espace en bas seulement */
+    margin: 0 0 2rem;
+    /* Bonne taille de police */
+    font-size: 2rem;
+    /* Annuler le gras par défaut et préférer une graisse légère */
+    font-weight: lighter;
+  }
+  
+  /*
+   * Entrée de CV (groupe avec titre, période, description...
+   */
+  .entree {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: baseline;
+    gap: .25rem .5rem;
+  }
+  /* Pour chaque entrée qui suit une autre entrée, ajouter un espacement vertical */
+  .entree + .entree {
+    margin-top: 1.5rem;
+  }
+  .entree .nom {
+    margin: 0;
+    grid-column: 3 / span 10;
+    grid-row-start: 1;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .entree .periode {
+    grid-column: 1 / span 2;
+    grid-row-start: 1;
+    font-weight: bold;
+  }
+  .entree .diplome {
+    grid-column: 3 / span 4;
+    grid-row-start: 2;
+    font-style: italic;
+    color: #777;
+  }
+  .entree .description {
+    grid-column: 3 / span 8;
+    grid-row-start: 3;
+  }
+  
+  /*
+   * Pied de page
+   */
+  footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    border-top: 6px double currentColor;
+    color: #777;
+  }
+  

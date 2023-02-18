@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum vitæ</title>
+
+  <!-- Feuille de style -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Police Raleway -->
+  <link href="raleway/raleway.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header class="entete">
+    <!-- Bonne pratique: un seul élément `h1` par document -->
+    <h1 class="entete__nom">Giulia Ferretti</h1>
+
+    <span class="entete__titre">Doctorante en humanités numériques</span>
+  </header>
+
+  <section>
+    <h2 id="informations-personnelles">Informations personnelles</h2>
+
+    <dl class="liste-infos-personnelles">
+      <dt>Date de naissance</dt>
+      <dd>01 janvier 1999</dd>
+
+      <dt>Adresse</dt>
+      <dd>Montréal, QC</dd>
+
+      <dt>Téléphone</dt>
+      <dd>+1 (234) 456-7890</dd>
+
+      <dt>Courriel</dt>
+      <dd>bonjour@exemple.com</dd>
+
+      <dt>Site web</dt>
+      <dd>http://mapageweb.org/</dd>
+    </dl>
+  </section>
+
+  <!-- Une règle horizontale (élément auto-fermant) -->
+  <hr>
+
+  <!-- Colonne principale, corps du document -->
+  <section>
+    <h2 id="profil">Profil</h2>
+
+    <p>Giulia Ferretti est doctorant à l’université de Montréal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac tempus ante. Maecenas efficitur tempus consequat. Aenean egestas ligula sit amet ligula consequat facilisis. Etiam vel vulputate nulla. Integer eget fermentum orci, ac sagittis libero. Etiam efficitur volutpat neque, id placerat ante porta vel.</p>
+  </section>
+
+  <hr>
+
+  <section>
+    <!-- Bonnes pratiques: un identifiant unique pour les en-têtes -->
+    <h2 id="education">Éducation</h2>
+
+    <!-- Chaque entrée est balisée dans une section -->
+    <!-- Première entrée -->
+    <section class="entree">
+      <!-- Le nom de l’entrée dans un en-tête de niveau 3 -->
+      <h3 class="nom">Université X</h3>
+
+      <!-- Pour isoler la période -->
+      <div class="periode">depuis 2020</div>
+
+      <!-- Type de diplôme -->
+      <div class="diplome">Doctorat</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <!-- Deuxième entrée -->
+    <section class="entree">
+      <h3 class="nom">Université Y</h3>
+
+      <div class="periode">2018–2020</div>
+      <div class="diplome">Maîtrise</div>
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <!-- Troisième entrée -->
+    <section class="entree">
+      <h3 class="nom">Université Z</h3>
+
+      <div class="periode">2015–2018</div>
+      <div class="diplome">Doctorat</div>
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2 id="experience-professionnelle">Expérience professionnelle</h2>
+
+    <!-- Première entrée -->
+    <section class="entree">
+      <h3 class="nom">Employeur X</h3>
+
+      <div class="periode">2015–2018</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <!-- Deuxième entrée -->
+    <section class="entree">
+      <h3 class="nom">Employeur Y</h3>
+
+      <div class="periode">2015–2018</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <!-- Troisième entrée -->
+    <section class="entree">
+      <h3 class="nom">Employeur Z</h3>
+
+      <div class="periode">2015–2018</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+  </section>
+  <hr>
+
+  <section>
+    <h2 id="prix-distinctions">Prix et distinctions</h2>
+
+    <!-- Première entrée -->
+    <section class="entree">
+      <h3 class="nom">Médaille du gouverneur</h3>
+
+      <div class="periode">2019</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+
+    <!-- Deuxième entrée -->
+    <section class="entree">
+      <h3 class="nom">Bourse du recteur</h3>
+
+      <div class="periode">2018</div>
+
+      <div class="description">Lorem ipsum dolor sit amet.</div>
+    </section>
+  </section>
+
+  <hr>
+
+  <!-- Un autre bloc secondaire (souvent à la fin du CV) -->
+  <section>
+    <h2 id="competences">Compétences</h2>
+
+    <!-- Une liste non ordonnée -->
+    <ul>
+      <li>Assidue</li>
+      <li>Ponctuelle</li>
+      <li>Rigoureuse</li>
+    </ul>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    Pied de page – Giulia Ferretti
+  </footer>
+
+</body>
+</html>

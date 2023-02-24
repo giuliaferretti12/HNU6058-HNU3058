@@ -1,0 +1,32 @@
+html {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: midnightblue;
+  }
+  main {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 36rem;
+    background-color: lightgreen;
+    color: darkslategray;
+    min-height: 16rem;
+  }
+  button {
+    margin: 2rem auto;
+    display: block;
+    padding: .75em 1.25em;
+    font-size: 1.125rem;
+    border-radius: .3rem;
+    text-align: center;
+    border: 0;
+    background-color: midnightblue;
+    color: white;
+    font-weight: bolder;
+  }
+  button:hover {
+    background-color: mediumblue;
+  }
+  button:active {
+    background-color: darkblue;
+  }
+  

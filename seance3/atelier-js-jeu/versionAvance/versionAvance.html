@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Un jeu de devinette en JavaScript</title>
+
+  <!-- Un peu de style minimal -->
+  <link rel="stylesheet" href="versionAvance.css" />
+</head>
+<body>
+
+  <main>
+    <h1>Un jeu de devinette en JavaScript</h1>
+    <p>
+      Dans ce jeu, vous devrez tenter de deviner un nombre choisi au hasard compris entre 1 et 100.
+    </p>
+
+    <form>
+      <input
+        type="text"
+        id="tentative"
+        name="tentative"
+        placeholder="Ex. 12"
+      />
+
+      <button type="submit">Essayer</button>
+    </form>
+
+    <!-- Les indices seront mis dans cette boîte -->
+    <aside></aside>
+
+    <h3>Tentatives <span id="nombre-de-tentatives"></span></h3>
+    <ul id="liste-des-tentatives"></ul>
+  </main>
+
+
+  <!-- Nous plaçons le script à la fin du <body>, car nous allons manipuler le DOM. -->
+  <script src="versionAvance.js"></script>
+</body>
+</html>

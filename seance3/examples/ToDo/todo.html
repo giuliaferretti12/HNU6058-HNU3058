@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <input id="todo-title" type="text"/>
+        <input id="date-picker" type="date"/>
+        <!--j'appelle la fonction JS-->
+        <button onclick="addTodo()">Add Todo</button>
+
+        <!--liste Todo dans un div-->
+        <div id="todo-list"></div>
+
+        <script>
+        
+        //MODEL- lié aux données
+        //si dans le stockage local il y a un array « todos », alors il faut l'utiliser comme un array.
+        //sinon, on utilise l'array par défaut.
+        let todos;
+
+        //on récupère tout ce qui est stocké localement et le reconvertit en array.
+        const savedTodos =  JSON.parse(localStorage.getItem('todos'));
+        //on vérifie que c'est un array
+        if (Array.isArray(savedTodos)) {
+            todos = savedTodos;
+        } else {
+          todos = [{
+            title: 'Créer une page HTML',
+            dueDate: '24-02-2023',
+            id: 'id1'
+         }, {
+            title: 'Créer une page CSS',
+            dueDate: '25-03-2023',
+            id: 'id2'
+         }, {
+            title:'Créer une page JS',
+            dueDate: '26-04-2023',
+            id: 'id3'
+         }];
+        }
+
+        
+        //on crée une Todo liste.
+        function createTodo(title, dueDate) {
+            //juste un moyen cool de créer un identifiant en JavaScript.
+            const id = '' + new Date().getTime();
+
+            //pour ajouter un nouveau élément dans l'array Todo.
+            todos.push({
+                title: title,
+                dueDate: dueDate,
+                id: id
+            });
+
+            saveTodos();
+
+        }
+
+        //on supprime la liste Todo si son id est égal à idToDelete.
+        function removeTodo(idToDelete) {     
+            todos = todos.filter(function (todo) {
+             //si l'id de ce todo correspond à idToDelete, retourner « false ».
+             //pour tout le reste, renvoyer « true ».
+             if (todo.id === idToDelete) {
+                return false;
+             } else {
+                return true;
+             }
+            });
+
+            saveTodos();
+        }
+
+
+        function saveTodos() {
+            localStorage.setItem('todos', JSON.stringify(todos));
+        }
+
+        //CONTROLLER 
+        function addTodo() {
+            //pour obtenir des éléments HTML par leurs ID
+            const textbox = document.getElementById('todo-title');
+            const title = textbox.value;
+
+            const datePicker = document.getElementById('date-picker');
+            const dueDate = datePicker.value;
+
+            createTodo(title, dueDate);
+
+            render();
+        }
+
+        function deleteTodo(event) {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+
+            removeTodo(idToDelete);
+            render();
+        }
+
+
+        //VIEW
+        function render () {
+            //on réinitialise notre liste, sinon la liste se répétera.  
+            //on veut effacer la liste mais pas le bouton, donc on place la liste dans un div.
+            document.getElementById('todo-list').innerHTML = '';
+            
+            todos.forEach(function (todo) {
+            const element = document.createElement('div');
+            //on change le texte à l'intérieur de l'élément HTML que nous venons de créer
+            element.innerText = todo.title + ' ' + todo.dueDate;
+
+            const deleteButton = document.createElement('button');
+            deleteButton.innerText= 'Delete';
+            deleteButton.style = 'margin-left: 12px;';
+            deleteButton.onclick = deleteTodo;
+            deleteButton.id = todo.id;
+            element.appendChild(deleteButton);
+
+
+            //on ajoute un élément div à la fin du 'body' : c'est un autre enfant du 'body'.
+            const todoList = document.getElementById('todo-list');
+            todoList.appendChild(element);
+        });
+    };
+
+        render();
+
+        </script>
+    </body>
+</html>

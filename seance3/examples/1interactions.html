@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+       <!--lorsque je passe la souris sur la photo, je vois la légende-->
+        <img src="astronaute.avif" alt="Astronaute" onmouseover="showLegende()" onmouseout="hideLegende()">
+        <div id="tooltip" style="display:none">C'est un astronaute !</div>
+        
+        <script>
+        function showLegende() {
+          document.getElementById("tooltip").style.display = "block";
+        }
+        
+        function hideLegende() {
+          document.getElementById("tooltip").style.display = "none";
+        }
+        </script> 
+    </body>
+</html>
+

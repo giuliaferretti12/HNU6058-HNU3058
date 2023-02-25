@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HNU6058 - HNU3058</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/reveal.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/css/theme/moon.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/css/zenburn.min.css'>
+<!-- <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/90377/slidedeck_styles_base.css'> -->
+<link rel='stylesheet' href="styles.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+<div class="reveal">
+    <div class="slides">
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" >
+            <h1 style="font-weight: bold">HNU6058 – HNU3058</h1>
+            <h3>Technologies du web</h3>
+            <p>Séance 3 – 24 février</p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" >
+        <h2>Plan de la séance</h2>
+        <ul>
+          <li>Rappel</li>
+          <li>Quelques derniers éléments HTML</li>
+          <li>Quelques derniers éléments CSS</li>
+          <li>Variante de l&#39;atelier CSS</li>
+          <li>Introduction à JavaScript</li>
+          <li>Atelier JS</li>
+        </ul>    
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg" >
+        <h2>Rappel : Structurer une page Web</h2>
+        <ul>
+            <li>HTML    </li>
+                <ul>
+                    <li><code>section</code> : le contenu à l'intérieur est groupé (thème unique)</li>
+                    <li><code>div</code> : n'a pas de signification particulière, <i>for style purpose</i><!--la signification dépend de la classe à laquelle il appartient--></li>
+                </ul>
+            <li><code>CSS – grid</code></li>
+        </ul>
+        </ul>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Derniers éléments CSS</h2>
+        <h3>Flexbox</h3>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Derniers éléments HTML</h2>
+        <h3>svg</h3>
+        <p>animate</p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>CSS</h2>
+        <h3>Buttons <code>on-click</code></h3>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier CSS</h2>
+        <h3>Pour compléter</h3>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier CSS</h2>
+        <h3>Couleurs</h3>
+          <ul>
+              <li>Par défaut</li>
+              <li>RBG</li>
+              <li>HSL</li>
+          </ul>
+          <p><a href="https://coolors.co/" target="_blank">Palettes</a></p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier CSS</h2>
+        <h3>Pseudo-éléments</h3>
+        <p><code>dt::after</code></p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Box-shadow</h2>
+        <p><code>box-shadow: 0 0 10px rgba(0, 0, 0, .15);</code></p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier CSS</h2>
+        <h3>@import</h3>
+        <ol>
+          <li><code class="language-html">&lt;a href=&quot;https://fonts.com/&quot;&gt;@import&lt;/a&gt;
+          </code></li>
+          <li>télécharger TTF / OTF</li>
+          </li>
+        </ol>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier CSS</h2>
+        <h3>Mise en page de la<code>grid</code></h3>
+        <p><pre><code>grid-template-columns: [colonne-secondaire] 4fr [colonne-principale]  8fr;</pre></code></p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>JavaScript</h2>
+        <p>Un langage en constante évolution</p>
+        <ul>
+          <li>1995</li>
+          <li><a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a></li>
+          <li>Netscape</li>
+          <li>1997 : European Computer Manufacturers Association (ECMA)</li>
+          <!--In September 1995, a Netscape programmer named Brandan Eich developed a new scripting language in just 10 days. It was originally named Mocha, but quickly became known as LiveScript and, later, JavaScript.
+          JavaScript was initially created to “make web pages alive”. The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.
+          -->
+          <li>Octoverse report 2018 par GitHub : <q>there are more JavaScript code repositories than any other language</q></li>
+          <li>Frameworks : Ex. Angular, React, Vue, Svelte</li>
+          <li><a href="https://www.w3schools.com/js/js_versions.asp" target="_blank">ECMAScript Editions</a></li>
+        </ul>
+      </section> 
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Que peut-on faire avec JS ?</h2>
+        <!--The only programming language that can run in a browser-->
+        <p>Manipulation des pages Web, Interaction avec l&#39;utilisateur, et le serveur Web<!--interaction avec serveur Web--></p>
+        <p>Par exemple, in-browser JavaScript est capable de :</p>
+        <ul><small>
+        <li>Ajouter du nouveau HTML à la page, changer le contenu existant, modifier les styles</li>
+        <li>Réagir aux actions de l&#39;utilisateur, s&#39;exécuter sur les clics de souris, les mouvements du pointeur, les pressions sur les touches</li>
+        <li>Envoyer des requêtes sur le réseau à des serveurs distants, télécharger et téléverser des fichiers (technologies dites AJAX et COMET)</li>
+        <li>Obtenir et définir des cookies, poser des questions au visiteur, afficher des messages</li>
+        <li>Mémoriser les données du côté client (&quot;stockage local&quot;)</li>
+        </small></ul>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Lier une page HTML à un script JS</h2>
+        <ul>
+          <li><code>&#60;script src="/path/to/script.js"&#62;</code></li>
+          <li><code>&#60;script src="https://link.js"&#62;</code></li>
+          <li>Embedded style avec le tag <code>&#60;script&#62;</code></li>
+        </ul>
+        <!--
+          <script>
+            alert(1);
+          </script>
+        -->
+        <p><small>N.B. : Plusieurs scripts peuvent être liés à un seul document HTML</small></p>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>JavaScript - Exemples</h2>
+        <ul>
+          <li><code>alert('hello');</code></li>
+          <li><code>console.log('hello');</code></li>
+          <li><code>document.body.innerHTML = 'hello';</code></li>
+          <!--overwrite the entire page and replace it with 'hello'-->
+        </ul> 
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>JavaScript</h2>
+        <h3>Syntaxe</h3>
+        <ul>
+          <li>Variables : <code>var message = 'Hello'</code> ou <code>let</code></li>
+          <li><code>const</code></li>
+          <li>Strings</li>
+          <li>Numbers</li>
+          <li>Arrays : liste de valeurs, par ex.<code><pre> let todos = ['objet a', 'objet b', 'objet c'];</pre></code></li>
+          <li>Méthodes : par ex. <code><pre>todos.push('objet d');</pre></code> ou <code><pre>todos.pop();</pre></code></li>
+        </ul> 
+      </section>
+      <!--<section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>JavaScript - Exemple 2</h2>
+        <h3>ToDo</h3>
+      </section> -->
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>JavaScript</h2>
+        <h3>Fonctions</h3>
+        <ul>
+        <li>Définir une fonction</li>
+        <li>Exécuter une fonction</li>
+        <li>Une fonction peut avoir des paramètres</li>
+        <li>Les paramètre peuvent correspondre à des valeurs (arguments)</li>
+        </ul>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Atelier JavaScript</h2>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Document Object Model (DOM)</h2>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>MVC</h2>
+        <p>La plupart des frameworks JavaScript suivent ce schéma.</p>
+        <ul>
+          <li><i>Model</i> : Le composant central du modèle. Il s'agit de la structure de données dynamique de l'application</li>
+          <li><i>View</i> : Toute représentation de l'information</li>
+          <li><i>Controller</i> : Accepte les input et les convertit en commandes pour le modèle ou la vue.</li>
+        </ul>
+      </section>
+      <section data-background-image="https://premierpaintroller.com/wp-content/uploads/2018/06/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg">
+        <h2>Exemple</h2>
+        <h3>Créer une ToDo Liste en JavaScript</h3>
+      </section>
+
+    </div>
+  </div> 
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/js/reveal.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.2.0/lib/js/head.min.js'></script><script  src="./script.js"></script>
+  
+  </body>
+  </html>
+  

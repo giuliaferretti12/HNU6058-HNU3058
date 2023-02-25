@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculatrice</h1>
+    <form onsubmit="return calculate()">
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" required><br>
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" required><br>
+      <label for="op">Operation:</label>
+      <select id="op" required>
+        <option value="+">Add</option>
+        <option value="-">Subtract</option>
+        <option value="*">Multiply</option>
+        <option value="/">Divide</option>
+      </select><br>
+      <input type="submit" value="Calculate">
+    </form>
+    <p id="result"></p>
+    <script>
+      //la fonction récupère les valeurs des champs de saisie en utilisant leurs id.
+      //on convertit les valeurs en nombres en utilisant la fonction parseFloat().
+      function calculate() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let op = document.getElementById("op").value;
+        let result;
+        //on utilise une instruction de commutation pour effectuer l'opération sélectionnée et on stocke le résultat dans une variable.
+        switch (op) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num1 / num2;
+            break;
+          default:
+            result = "Invalid operation";
+        }
+        // on définit la propriété innerHTML de l'élément de paragraphe de résultat pour afficher le résultat.
+        document.getElementById("result").innerHTML = result;
+        //on renvoie false pour empêcher la soumission du formulaire au serveur.
+        return false;
+      }
+    </script>
+  </body>
+</html>
